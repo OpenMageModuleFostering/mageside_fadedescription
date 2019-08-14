@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageside_FadeDescription>
+            <version>1.0.0</version>
+        </Mageside_FadeDescription>
+    </modules>
+
+    <global>
+
+        <blocks>
+            <mageside_fadedescription>
+                <class>Mageside_FadeDescription_Block</class>
+            </mageside_fadedescription>
+        </blocks>
+
+        <helpers>
+            <mageside_fadedescription>
+                <class>Mageside_FadeDescription_Helper</class>
+            </mageside_fadedescription>
+        </helpers>
+
+        <models>
+            <mageside_fadedescription>
+                <class>Mageside_FadeDescription_Model</class>
+            </mageside_fadedescription>
+        </models>
+
+        <resources>
+            <mageside_fadedescription_setup>
+                <setup>
+                    <module>Mageside_FadeDescription</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mageside_fadedescription_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <mageside_fadedescription>
+                    <file>mageside/mageside_fadedescription.xml</file>
+                </mageside_fadedescription>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <mageside_fadedescription>
+            <general>
+                <enabled>1</enabled>
+                <fade_descrip_height>100</fade_descrip_height>
+                <fade_descrip_show_text>Show More</fade_descrip_show_text>
+                <fade_descrip_hide_text>Show Less</fade_descrip_hide_text>
+                <fade_descrip_class>category-description</fade_descrip_class>
+            </general>
+        </mageside_fadedescription>
+    </default>
+
+</config>

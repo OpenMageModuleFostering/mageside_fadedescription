@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageside_Base>
+            <version>1.0.0</version>
+        </Mageside_Base>
+    </modules>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <mageside_base>
+                    <files>
+                        <default>mageside/Mageside_Base.csv</default>
+                    </files>
+                </mageside_base>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <global>
+        <models>
+            <mageside_base>
+                <class>Mageside_Base_Model</class>
+            </mageside_base>
+        </models>
+        <helpers>
+            <mageside_base>
+                <class>Mageside_Base_Helper</class>
+            </mageside_base>
+        </helpers>
+        <blocks>
+            <mageside_base>
+                <class>Mageside_Base_Block</class>
+            </mageside_base>
+        </blocks>
+    </global>
+</config>

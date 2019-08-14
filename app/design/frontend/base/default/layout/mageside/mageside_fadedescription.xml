@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <catalog_category_default>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/fadedescription.css</stylesheet></action>
+            <block type="core/template" name="fadedescription" template="mageside/fadedescription/js.phtml" after="-"/>
+        </reference>
+    </catalog_category_default>
+
+
+    <catalog_category_layered>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/fadedescription.css</stylesheet></action>
+            <block type="core/template" name="fadedescription" template="mageside/fadedescription/js.phtml" after="-"/>
+        </reference>
+    </catalog_category_layered>
+
+</layout>

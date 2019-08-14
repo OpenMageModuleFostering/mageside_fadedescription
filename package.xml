@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mageside_FadeDescription</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://mageside.com/MS-LICENSE.txt">OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This module fade category description.</summary>
+    <description>This module fade category description.</description>
+    <notes>To be continue</notes>
+    <authors><author><name>Rostislav</name><user>rostislavs</user><email>rostislavs@mageside.com</email></author></authors>
+    <date>2016-06-13</date>
+    <time>15:19:16</time>
+    <contents><target name="magelocal"><dir name="Mageside"><dir name="FadeDescription"><dir name="Helper"><file name="Data.php" hash="bdde0eee04d1d7fb79453926887f61d1"/></dir><dir name="etc"><file name="adminhtml.xml" hash="72668d694a7f07e1cc5e2c7e9d893fca"/><file name="config.xml" hash="a7bd828177969d3e1b2de90ad0750c47"/><file name="system.xml" hash="ac9b51a61b32e8cd4fd7f85b82a3dea8"/></dir><dir name="sql"><dir name="mageside_fadedescription_setup"><file name="mysql4-install-1.0.0.php" hash="fd9e1f0d9d56b5be8c2d3c86c23b86e1"/></dir></dir></dir><dir name="Base"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="Button.php" hash="4abb6e5993a6ed23e601be816eadfa0b"/></dir></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="88a0d0e2beb4aeea42ee8055d83277fd"/></dir><dir name="etc"><file name="adminhtml.xml" hash="96ab8b8f5f2017fbd06bd4a0bb9da55a"/><file name="config.xml" hash="74314fcb2934219639eb3889e53efe07"/><file name="system.xml" hash="ca33f7d6ee8712d594127d35e1730baa"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mageside_FadeDescription.xml" hash="61b49d266399ad16fb3f4820e825ff68"/><file name="Mageside_Base.xml" hash="35a8e13cd3b65fc16aa76f6db937de5c"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="mageside"><file name="mageside_fadedescription.xml" hash="0123236dd7c986316926e3d520057362"/></dir></dir><dir name="template"><dir name="mageside"><dir name="fadedescription"><file name="js.phtml" hash="0b6c2f2d0de76f4e8a110fb75a2d0195"/></dir></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="images"><dir name="mageside"><dir name="base"><file name="mageside.png" hash="ab6a2115bf3956f4a395b63286c7e5bd"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="fadedescription.css" hash="45ac6becc0621c1bedba4b308f76ba34"/></dir><dir name="images"><file name="category-fade-icon.png" hash="f96c1381e7c1a830eab65720ef6bd71a"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.6.0</max></php></required></dependencies>
+</package>

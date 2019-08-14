@@ -1,0 +1,29 @@
+
+.descr-bottom-gradient {
+    z-index: 2;
+    position: relative;
+    height: 50px;
+    margin-top: -50px;
+    overflow: hidden;
+    background: -moz-linear-gradient( bottom, rgb(255, 255, 255) 15%, rgba(255, 255, 255, 0) 100% );
+    background: -webkit-gradient( linear, bottom, top, color-stop(15%, rgb(255, 255, 255)), color-stop(100%, rgba(255, 255, 255, 0)) );
+    background: -webkit-linear-gradient( bottom, rgb(255,255,255) 15%, rgba(255, 255, 255, 0) 100% );
+    background: -o-linear-gradient( bottom, rgb(255,255,255) 15%, rgba(255, 255, 255, 0) 100% );
+    background: -ms-linear-gradient( bottom, rgb(255,255,255) 15%, rgba(255, 255, 255, 0) 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#ffffff', GradientType=0 );
+    background: linear-gradient( bottom, rgb(255, 255, 255) 15%, rgba(255, 255, 255, 0) 100% );
+}
+
+.descr-show-button,
+.descr-hide-button {
+    z-index: 3;
+    position: relative;
+    height: 19px;
+    background: url(../images/category-fade-icon.png) 15px -21px no-repeat;
+    padding-left: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.descr-hide-button {
+    background-position: 15px 0;
+}

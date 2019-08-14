@@ -1,0 +1,71 @@
+<?php
+$_configPath = 'mageside_fadedescription/general/';
+if (Mage::getStoreConfigFlag($_configPath . 'enabled')):
+    if (!$_category = Mage::registry('current_category')) { return; };
+    if (!$_pixels = $_category->getData('fade_descrip_height')) {
+        $_pixels = Mage::getStoreConfig($_configPath . 'fade_descrip_height');
+    }
+    if (!$_showText = $_category->getData('fade_descrip_show_text')) {
+        $_showText = Mage::getStoreConfig($_configPath . 'fade_descrip_show_text');
+    }
+    if (!$_hideText = $_category->getData('fade_descrip_hide_text')) {
+        $_hideText = Mage::getStoreConfig($_configPath . 'fade_descrip_hide_text');
+    }
+    $_class = Mage::getStoreConfig($_configPath . 'fade_descrip_class');
+
+?>
+<script type="text/javascript">
+    document.observe("dom:loaded", function() {
+        $$('.<?php echo $_class ?>').each(function(el){
+            if (el.getHeight() < <?php echo $_pixels ?>) {
+                return;
+            }
+            function fadeOut(elem) {
+                elem.setStyle({
+                    position: 'relative',
+                    height: '<?php echo $_pixels ?>px',
+                    overflow: 'hidden'
+                });
+            }
+            function fadeIn(elem) {
+                elem.setStyle({
+                    position: 'relative',
+                    height: 'auto',
+                    overflow: 'hidden'
+                });
+            }
+
+            fadeOut(el);
+
+            var bottomGradient = new Element('div', { 'class': 'descr-bottom-gradient' });
+            el.insert({after: bottomGradient});
+
+            var showButton = new Element('a', { href: 'javascript:void(0);' }).update('<?php echo $_showText ?>');
+            var showButtonDiv = new Element('div', { 'class': 'descr-show-button' });
+            showButtonDiv.insert(showButton);
+            bottomGradient.insert({after: showButtonDiv});
+
+            var hideButton = new Element('a', { href: 'javascript:void(0);' }).update('<?php echo $_hideText ?>');
+            var hideButtonDiv = new Element('div', { 'class': 'descr-hide-button' });
+            hideButtonDiv.insert(hideButton);
+            showButtonDiv.insert({after: hideButtonDiv});
+
+            hideButtonDiv.hide();
+
+            showButton.observe('click', function(event) {
+                showButtonDiv.hide();
+                hideButtonDiv.show();
+                bottomGradient.hide();
+                fadeIn(el);
+            });
+
+            hideButton.observe('click', function(event) {
+                hideButtonDiv.hide();
+                showButtonDiv.show();
+                bottomGradient.show();
+                fadeOut(el);
+            });
+        });
+    });
+</script>
+<?php endif; ?>

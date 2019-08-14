@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <mageside translate="label" module="mageside_base">
+            <label>
+                <![CDATA[
+                <div style="position: absolute;">
+                <img id="mageside-tab" src="" alt="MageSide" width="99" height="17"/>
+                </div>&nbsp;
+                <script>
+                    var subs = SKIN_URL.indexOf("adminhtml");
+                    $('mageside-tab').src = SKIN_URL.substring(0, subs) + "adminhtml/default/default/images/mageside/base/mageside.png";
+                </script>
+                ]]>
+            </label>
+            <sort_order>800</sort_order>
+        </mageside>
+    </tabs>
+</config>

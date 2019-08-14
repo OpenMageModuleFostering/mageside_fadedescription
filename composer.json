@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Mageside_FadeDescription",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "This module fade category description.",
+    "authors": [
+    {
+        "name": "Rostislav",
+        "email": "rostislavs@mageside.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

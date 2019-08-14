@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Base module for mageside modules
+ */
+-->
+<config>
+    <modules>
+        <Mageside_Base>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Mageside_Base>
+    </modules>
+</config>

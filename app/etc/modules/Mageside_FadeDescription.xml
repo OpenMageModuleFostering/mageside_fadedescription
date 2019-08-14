@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/*
+ *==Mageside License==
+ *Copyright (c) 2015-2016
+ *All rights reserved.
+ *
+ * @category    Mageside
+ * @package     Mageside_FadeDescription
+ *
+ */
+-->
+<config>
+    <modules>
+        <Mageside_FadeDescription>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Mageside_FadeDescription>
+    </modules>
+</config>
